@@ -1,0 +1,1 @@
+sass --watch "C:\Users\Tashdid Diganta\Desktop\front-end\qubex\assets\scss\main.scss":"C:\Users\Tashdid Diganta\Desktop\front-end\qubex\assets\css\style.css"
