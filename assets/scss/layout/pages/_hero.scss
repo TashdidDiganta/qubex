@@ -21,7 +21,7 @@
     }
     &-shape{
         &-1{
-            top: 200px;
+            top: 190px;
             right: 255px;
         }
         &-2{
@@ -31,6 +31,60 @@
         &-3{
             top: 345px;
             right: 36%;
+        }
+    }
+
+    &-social{
+        top: 420px;
+        left: 80px;
+        & a{
+            display: block;
+            font-size: 18px;
+            padding: 6px 10px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+            transition: .3s;
+            border: 1px solid var(--td-border);
+            &:hover{
+                color: var(--td-theme-color);
+                background-color: var(--td-white);
+                border-color:var(--td-white);
+            }
+        }
+    }
+
+    &-trusted{
+        &-card{
+            bottom: 13%;
+            right: 605px;
+            padding: 10px;
+            background-color: var(--td-white);
+            & h6{
+                padding-left: 15px;
+                padding-right: 18px;
+            }
+        }
+        &-left{
+            padding-left: 5px;
+            padding-right: 20px;
+            border-right: 1px solid #ececec;
+            & h3{
+                margin: 0;
+                font-size: 35px;
+            }
+            & span{
+                font-weight: 800;
+                font-size: 11px;
+                color: var(--td-black);
+            }
+        }
+        &-reating{
+            margin-top: -6px;
+            margin-bottom: -6px;
+            & i{
+                font-size: 12px;
+                color: #ffd34d;
+            }
         }
     }
 
