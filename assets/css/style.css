@@ -129,7 +129,7 @@
   --td-theme-color-2: #35c57d;
   --td-heading-color: #0f0d25;
   --td-cream-bg: #f8f4f2;
-  --td-gray-bg: #f4f4f4;
+  --td-gray-bg: #f7f3f1;
   --td-black: black;
   --td-white: white;
   --td-body-color: #767676;
@@ -141,6 +141,21 @@
 :root {
   --td-heading-font: "Arimo", sans-serif;
   --td-body-font: "DM Sans", sans-serif;
+}
+
+.td-btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 45px;
+  background: var(--td-theme-color);
+}
+.td-btn-lime {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 45px;
+  background: var(--td-theme-color-2);
 }
 
 * {
@@ -364,6 +379,18 @@ textarea {
 
 .p-absolute {
   position: absolute;
+}
+
+.td-gray-bg {
+  background-color: var(--td-gray-bg);
+}
+
+.pt-355 {
+  padding-top: 355px;
+}
+
+.pb-245 {
+  padding-bottom: 245px;
 }
 
 /*--
@@ -3585,6 +3612,7 @@ textarea {
   left: 0;
   right: 0;
   top: 20px;
+  z-index: 999;
   position: absolute;
 }
 .td-header-menu ul > li {
@@ -3712,6 +3740,30 @@ textarea {
 .td-header-search button {
   font-size: 20px;
   color: var(--td-heading-color);
+}
+
+.td-hero-content p {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  color: var(--td-theme-color);
+}
+.td-hero-title {
+  font-size: 90px;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+}
+.td-hero-shape-1 {
+  top: 200px;
+  right: 255px;
+}
+.td-hero-shape-2 {
+  top: 260px;
+  right: 200px;
+}
+.td-hero-shape-3 {
+  top: 345px;
+  right: 36%;
 }
 
 /*# sourceMappingURL=style.css.map */
