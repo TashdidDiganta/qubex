@@ -235,7 +235,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: var(--td-body-color);
   font-family: var(--td-body-font);
 }
@@ -409,6 +409,10 @@ textarea {
 
 .pt-120 {
   padding-top: 120px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
 }
 
 /*--
@@ -3834,6 +3838,10 @@ textarea {
   color: #ffd34d;
 }
 
+.td-about-bg {
+  right: 0;
+  bottom: 52px;
+}
 .td-about__img-two {
   top: 64%;
   right: -12px;
@@ -3857,6 +3865,22 @@ textarea {
 }
 .td-about-points li + li {
   margin-left: 65px;
+}
+.td-about__call {
+  margin-left: 60px;
+}
+.td-about__call-icon {
+  width: 60px;
+  height: 60px;
+  line-height: 67px;
+  text-align: center;
+  margin-right: 20px;
+  border-radius: 100%;
+  background-color: var(--td-theme-color-2);
+}
+.td-about__call-icon i {
+  font-size: 20px;
+  color: var(--td-white);
 }
 
 .td-client__card {

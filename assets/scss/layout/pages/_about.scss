@@ -1,6 +1,10 @@
 @use '../../utils' as *;
 
 .td-about{
+    &-bg{
+        right: 0;
+        bottom: 52px;
+    }
     &__img{
         &-two{
             top: 64%;
@@ -29,6 +33,23 @@
         }
         & li+li{
             margin-left: 65px;
+        }
+    }
+
+    &__call{
+        margin-left: 60px;
+        &-icon{
+            width: 60px;
+            height: 60px;
+            line-height: 67px;
+            text-align: center;
+            margin-right: 20px;
+            border-radius: 100%;
+            background-color: var(--td-theme-color-2);
+            & i{
+                font-size: 20px;
+                color: var(--td-white);
+            }
         }
     }
 }
