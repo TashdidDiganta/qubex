@@ -129,6 +129,7 @@
   --td-theme-color-2: #35c57d;
   --td-heading-color: #0f0d25;
   --td-cream-bg: #f8f4f2;
+  --td-btn-bg: #f4f4f4;
   --td-gray-bg: #f7f3f1;
   --td-border: #eae5e2;
   --td-black: black;
@@ -160,6 +161,7 @@
 }
 
 .td-section-subtitle {
+  font-size: 14px;
   font-weight: 600;
   color: var(--td-theme-color);
 }
@@ -182,6 +184,11 @@ body {
   font-weight: normal;
   color: var(--td-body-color);
   line-height: 26px;
+}
+
+.container-1295 {
+  margin: 0 auto;
+  max-width: 1295px;
 }
 
 a {
@@ -234,7 +241,7 @@ ul {
 p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 25px;
   margin-bottom: 0px;
   color: var(--td-body-color);
   font-family: var(--td-body-font);
@@ -375,6 +382,14 @@ textarea {
 
 .z-index-11 {
   z-index: 11;
+}
+
+.f-size {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
 }
 
 .overflow-y-visible {
@@ -3893,6 +3908,68 @@ textarea {
 }
 .td-client__card-count {
   margin-bottom: -2px;
+}
+
+.td-service__card {
+  padding: 20px 20px 30px 20px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.td-service__card-icon {
+  top: 26%;
+  z-index: 22;
+  color: #fff;
+  font-size: 63px;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(160%);
+}
+.td-service__card::before {
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  content: "";
+  position: absolute;
+  background-color: var(--td-theme-color);
+}
+.td-service__card:hover {
+  background-color: var(--td-theme-color);
+}
+.td-service__card:hover .td-service__card-icon {
+  top: 17%;
+  opacity: 1;
+  visibility: visible;
+}
+.td-service__card:hover .td-service__body h5, .td-service__card:hover .td-service__body p {
+  color: var(--td-white);
+}
+.td-service__card:hover .td-service__img::before {
+  visibility: visible;
+}
+.td-service__img {
+  position: relative;
+}
+.td-service__img::before {
+  content: "";
+  background-color: var(--td-theme-color-2);
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  visibility: hidden;
+}
+.td-service__body-btn {
+  padding-top: 40px;
+  padding-bottom: 18px;
+}
+.td-service__body-btn a {
+  font-weight: 600;
+  padding: 15px 30px;
+  color: var(--td-black);
+  background: var(--td-btn-bg);
 }
 
 .td-featured-item {
