@@ -1,1 +1,51 @@
 @use '../../utils' as *;
+
+.td-about{
+    &__img{
+        &-two{
+            top: 64%;
+            right: -12px;
+        }
+    }
+    &__shape{
+        &-one{
+            left: 20px;
+            bottom: -105px;
+        }
+        &-two{
+            top: 32%;
+            right: 90px;
+        }
+    }
+    &-points{
+        & li{
+            display: flex;
+            align-items: center;
+            & i{
+                font-size: 55px;
+                margin-right: 28px;
+                color: var(--td-theme-color);
+            }
+        }
+        & li+li{
+            margin-left: 65px;
+        }
+    }
+}
+
+.td-client{
+    &__card{
+        top: 50px;
+        right: 0;
+        z-index: 1;
+        padding: 8px 20px;
+        background-color: var(--td-white);
+        box-shadow: 0px 0px 60px 0px rgba(4, 23, 26, 0.08);
+        &-count{
+            margin-bottom: -2px;
+        }
+    }
+}
+
+
+  

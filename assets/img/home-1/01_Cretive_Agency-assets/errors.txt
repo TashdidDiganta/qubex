@@ -1,12 +1,9 @@
-[2024-9-23 17:08:06] layer "+897 35345 29245": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2024-9-23 17:08:06] layer "www.nsstheme@mail.com  ": Unsupported extension: com
-[2024-9-23 17:08:06] layer "+999 325 6589": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2024-9-23 17:08:06] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2024-9-23 17:08:06] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2024-9-23 17:08:06] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
-[2024-9-23 17:08:06] layer "45 k+ ": Expected end of input but "+" found.
-[2024-9-23 17:08:06] layer "250+ ": Expected end of input but "+" found.
-[2024-9-23 17:08:06] layer "25+ ": Expected end of input but "+" found.
-[2024-9-23 17:20:00] layer "priceing2.png": Duplicate path: priceing2.png
-[2024-9-23 17:17:12] layer "team3.jpg": Duplicate path: team3.jpg
-[2024-9-23 17:20:12] layer "priceing3.png": Duplicate path: priceing3.png
+[2024-9-24 11:02:23] layer "+897 35345 29245": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2024-9-24 11:02:23] layer "www.nsstheme@mail.com  ": Unsupported extension: com
+[2024-9-24 11:02:23] layer "+999 325 6589": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2024-9-24 11:02:23] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2024-9-24 11:02:23] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2024-9-24 11:02:23] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2024-9-24 11:02:23] layer "45 k+ ": Expected end of input but "+" found.
+[2024-9-24 11:02:23] layer "250+ ": Expected end of input but "+" found.
+[2024-9-24 11:02:23] layer "25+ ": Expected end of input but "+" found.

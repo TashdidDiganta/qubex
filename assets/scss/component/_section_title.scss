@@ -1,1 +1,12 @@
 @use '../utils' as *;
+
+
+.td-section{
+    &-subtitle{
+        font-weight: 600;
+        color: var(--td-theme-color);
+    }
+    &-title{
+        font-size: 50px;
+    }
+}

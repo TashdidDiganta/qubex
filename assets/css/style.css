@@ -159,6 +159,14 @@
   background: var(--td-theme-color-2);
 }
 
+.td-section-subtitle {
+  font-weight: 600;
+  color: var(--td-theme-color);
+}
+.td-section-title {
+  font-size: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -191,6 +199,7 @@ h6 {
   margin-top: 0px;
   font-weight: 700;
   line-height: 1.2;
+  word-spacing: -5px;
 }
 
 h1 {
@@ -202,7 +211,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 h4 {
@@ -223,12 +232,16 @@ ul {
 }
 
 p {
-  font-family: var(--tp-ff-p);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  color: var(--tp-text-body);
-  margin-bottom: 15px;
-  line-height: 26px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: var(--td-body-color);
+  font-family: var(--td-body-font);
+}
+
+li {
+  list-style: none;
 }
 
 a:not([href]):not([class]),
@@ -298,7 +311,7 @@ input[type=number]:focus,
 input[type=password]:focus,
 input[type=url]:focus,
 textarea:focus {
-  border-color: var(--tp-common-black);
+  border-color: var(--td-theme-color);
 }
 input[type=text]:focus::placeholder,
 input[type=email]:focus::placeholder,
@@ -317,25 +330,25 @@ textarea {
 }
 
 *::-moz-selection {
-  background: var(--tp-common-black);
+  background: var(--td-theme-color);
   color: var(--tp-common-white);
   text-shadow: none;
 }
 
 *::selection {
-  background: var(--tp-common-black);
-  color: var(--tp-common-white);
+  background: var(--td-theme-color);
+  color: var(--td-white);
   text-shadow: none;
 }
 
 *::-moz-placeholder {
-  color: var(--tp-common-black);
+  color: var(--td-black);
   font-size: 14px;
   opacity: 1;
 }
 
 *::placeholder {
-  color: var(--tp-common-black);
+  color: var(--td-black);
   font-size: 14px;
   opacity: 1;
 }
@@ -3821,17 +3834,41 @@ textarea {
   color: #ffd34d;
 }
 
-.services-one__img::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+.td-about__img-two {
+  top: 64%;
+  right: -12px;
+}
+.td-about__shape-one {
+  left: 20px;
+  bottom: -105px;
+}
+.td-about__shape-two {
+  top: 32%;
+  right: 90px;
+}
+.td-about-points li {
+  display: flex;
+  align-items: center;
+}
+.td-about-points li i {
+  font-size: 55px;
+  margin-right: 28px;
+  color: var(--td-theme-color);
+}
+.td-about-points li + li {
+  margin-left: 65px;
+}
+
+.td-client__card {
+  top: 50px;
   right: 0;
-  content: "";
-  background-color: rgba(var(--arckytec-black-rgb), 0.3);
-  transition: all 500ms ease;
-  transform: translate3d(0px, -100%, 0px);
   z-index: 1;
+  padding: 8px 20px;
+  background-color: var(--td-white);
+  box-shadow: 0px 0px 60px 0px rgba(4, 23, 26, 0.08);
+}
+.td-client__card-count {
+  margin-bottom: -2px;
 }
 
 .td-featured-item {

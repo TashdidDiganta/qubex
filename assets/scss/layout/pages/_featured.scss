@@ -1,18 +1,6 @@
 @use '../../utils' as *;
 
-.services-one__img::after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: "";
-    background-color: rgba(var(--arckytec-black-rgb), .30);
-    transition: all 500ms ease;
-    transform: translate3d(0px, -100%, 0px);
-    z-index: 1;
-}
-  
+
 
 .td-featured{
     &-item{
