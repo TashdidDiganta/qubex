@@ -191,6 +191,11 @@ body {
   max-width: 1295px;
 }
 
+.container-1375 {
+  margin: 0 auto;
+  max-width: 1375px;
+}
+
 a {
   text-decoration: none;
 }
@@ -392,6 +397,10 @@ textarea {
   font-size: 20px;
 }
 
+.fs-30 {
+  font-size: 30px;
+}
+
 .overflow-y-visible {
   overflow-x: hidden;
   overflow-y: visible;
@@ -400,6 +409,13 @@ textarea {
 .overflow-x-visible {
   overflow-x: visible;
   overflow-y: hidden;
+}
+
+.td-rot-180 {
+  transform: rotate(180deg);
+}
+.td-rot-180 i {
+  margin-top: 7px;
 }
 
 .p-relative {
@@ -3910,6 +3926,73 @@ textarea {
   margin-bottom: -2px;
 }
 
+.td-contact__shape1 {
+  top: 70px;
+  z-index: -1;
+  left: 255px;
+}
+.td-contact__shape2 {
+  top: 12%;
+  left: 32%;
+}
+.td-contact__img {
+  margin-left: -60px;
+}
+.td-contact__policy {
+  left: 17%;
+  bottom: -40px;
+  background: var(--td-white);
+  padding: 40px 60px 40px 40px;
+  box-shadow: 0px 0px 60px 0px rgba(18, 20, 31, 0.06);
+}
+.td-contact__policy i {
+  font-size: 30px;
+}
+.td-contact__policy h5 {
+  font-size: 22px;
+}
+.td-contact__info li {
+  padding: 23px 0px;
+}
+.td-contact__info li:not(:last-child) {
+  border-bottom: 1px solid #f7f3f1;
+}
+.td-contact__info span, .td-contact__info h2 {
+  font-weight: bold;
+}
+
+.td-swiper-button-prev, .td-swiper-button-next {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--td-white);
+  transition: all 500ms ease;
+  box-shadow: 0px 0px 40px 0px rgba(18, 14, 14, 0.08);
+}
+.td-swiper-button-prev i, .td-swiper-button-next i {
+  color: var(--td-black);
+  font-size: 25px;
+}
+.td-swiper-button-prev:hover, .td-swiper-button-next:hover {
+  background-color: var(--td-theme-color);
+}
+.td-swiper-button-prev:hover i, .td-swiper-button-next:hover i {
+  color: var(--td-white);
+}
+
+.col-hover {
+  flex: 1 1 0; /* Ensure equal flex sizing */
+  transition: flex 0.3s ease, width 0.3s ease; /* Smooth transition for flex and width */
+}
+
+.col-hover:hover {
+  flex: 2 1 0;
+}
+
 .td-service__card {
   padding: 20px 20px 30px 20px;
   background-color: #fff;
@@ -3970,6 +4053,18 @@ textarea {
   padding: 15px 30px;
   color: var(--td-black);
   background: var(--td-btn-bg);
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.this-card {
+  width: 200px;
+  height: 150px;
+  background-color: #ddd;
+  transition: width 0.3s ease;
 }
 
 .td-featured-item {

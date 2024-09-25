@@ -1,1 +1,43 @@
 @use '../../utils' as *;
+
+.td-contact{
+    &__shape1{
+        top: 70px;
+        z-index: -1;
+        left: 255px;
+    }
+    &__shape2{
+        top: 12%;
+        left: 32%;
+    }
+    &__img{
+        margin-left: -60px;
+    }
+    &__policy{
+        left: 17%;
+        bottom: -40px;
+        background: var(--td-white);
+        padding: 40px 60px 40px 40px;
+        box-shadow: 0px 0px 60px 0px rgba(18, 20, 31, 0.06);
+        & i{
+            font-size: 30px;
+        }
+        & h5{
+            font-size: 22px;
+        }
+    }
+
+    &__info{
+        & li{
+            padding: 23px 0px;
+        }
+        & li:not(:last-child){
+            border-bottom: 1px solid #f7f3f1;
+        }
+        & span, & h2{
+            font-weight: bold;
+        }
+    }
+}
+
+  

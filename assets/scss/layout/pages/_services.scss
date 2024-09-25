@@ -72,3 +72,16 @@
         }
     }
 }
+
+
+.card-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .this-card {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    transition: width 0.3s ease;
+  }

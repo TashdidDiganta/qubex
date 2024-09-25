@@ -1,0 +1,49 @@
+@use '../../utils' as *;
+
+
+.td-project{
+    &__single{
+  
+    }
+}
+
+.td-swiper{
+    &-button{
+        &-prev, &-next{
+            width: 60px;
+            height: 60px;
+            display: flex;
+            text-align: center;
+            border-radius: 50px;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--td-white);
+            transition: all 500ms ease;
+            box-shadow: 0px 0px 40px 0px rgba(18, 14, 14, 0.08);
+            & i{
+                color: var(--td-black);
+                font-size: 25px;
+            }
+            &:hover{
+                background-color: var(--td-theme-color);
+                & i{
+                    color: var(--td-white);
+                }
+            }
+        }
+    }
+}
+
+
+
+  
+  .col-hover {
+    flex: 1 1 0; /* Ensure equal flex sizing */
+    transition: flex 0.3s ease, width 0.3s ease; /* Smooth transition for flex and width */
+  }
+  
+  .col-hover:hover {
+    flex: 2 1 0;
+  }
+
+  

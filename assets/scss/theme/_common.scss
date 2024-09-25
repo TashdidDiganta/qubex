@@ -33,6 +33,9 @@
 .fs-20{
 	font-size: 20px;
 }
+.fs-30{
+	font-size: 30px;
+}
 
 .overflow-y-visible{
 	overflow-x: hidden;
@@ -41,6 +44,13 @@
 .overflow-x-visible{
 	overflow-x: visible;
 	overflow-y: hidden;
+}
+
+.td-rot-180{
+	transform: rotate(180deg);
+	& i{
+		margin-top: 7px;
+	}
 }
 
 .p-relative{

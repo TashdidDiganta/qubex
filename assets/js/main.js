@@ -32,4 +32,11 @@
         // other options
     });
 
+
+    // $('.card-hover').hover(function() {
+    //     $(this).css('flex', '2 1 0%');
+    //   }, function() {
+    //     $(this).css('flex', '1 1 0%');
+    //   });
+      
 })(jQuery);
