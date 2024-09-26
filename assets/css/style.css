@@ -3875,6 +3875,11 @@ textarea {
   color: var(--td-heading-color);
 }
 
+.tdfaq-bg {
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
 .tdfaq__progress {
   position: relative;
   display: block;

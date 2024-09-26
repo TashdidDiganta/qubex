@@ -3,6 +3,11 @@
 
 
 .tdfaq{
+  &-bg{
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
     &__progress{
         position: relative;
         display: block;
