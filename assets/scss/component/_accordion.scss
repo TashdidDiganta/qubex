@@ -1,1 +1,82 @@
 @use '../utils' as *;
+
+.Rectangle_806 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 20px 0px rgba(16, 23, 40, 0.06);
+    position: absolute;
+    left: 1045px;
+    top: 5272px;
+    width: 500px;
+    height: 60px;
+    z-index: 337;
+  }
+  
+
+.tdfaq__accordion{
+    &-items{
+        & .accordion-item{
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 12px;
+            padding: 16px 28px 0 28px;
+            box-shadow: 0px 4px 20px 0px rgba(16, 23, 40, 0.06);
+            & .accordion-header{  
+                & .accordion-buttons{
+                    display: flex;
+                    font-size: 18px;
+                    font-weight: 600;
+                    align-items: center;
+                    padding-bottom: 16px;
+                    color: var(--td-black);
+                    &:not(.collapsed){
+                        .accordion-icon{
+                            background-color: var(--td-theme-color);
+                            &::before {
+                                transform: translate(-50%, -50%) rotate(90deg);
+                            }
+                        }
+                    } 
+                    & .accordion-icon{
+                        height: 25px;
+                        width: 25px;
+                        position: relative;
+                        margin-right: 13px;
+                        border-radius: 50px;
+                        display: inline-block;
+                        background-color: black;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 2px;
+                            height: 10px;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: var(--td-white);
+                            border-radius: 2px;
+                            transition: 0.4s;
+                        }
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 10px;
+                            height: 2px;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: var(--td-white);
+                            border-radius: 2px;
+                    }
+                }
+                }
+            }
+            & .accordion-body{
+                border-top: 1px solid #ececed;
+                padding: 15px 0px 28px 0px;
+                & p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

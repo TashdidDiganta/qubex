@@ -145,6 +145,78 @@
   --td-body-font: "DM Sans", sans-serif;
 }
 
+.Rectangle_806 {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 20px 0px rgba(16, 23, 40, 0.06);
+  position: absolute;
+  left: 1045px;
+  top: 5272px;
+  width: 500px;
+  height: 60px;
+  z-index: 337;
+}
+
+.tdfaq__accordion-items .accordion-item {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 12px;
+  padding: 16px 28px 0 28px;
+  box-shadow: 0px 4px 20px 0px rgba(16, 23, 40, 0.06);
+}
+.tdfaq__accordion-items .accordion-item .accordion-header .accordion-buttons {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+  padding-bottom: 16px;
+  color: var(--td-black);
+}
+.tdfaq__accordion-items .accordion-item .accordion-header .accordion-buttons:not(.collapsed) .accordion-icon {
+  background-color: var(--td-theme-color);
+}
+.tdfaq__accordion-items .accordion-item .accordion-header .accordion-buttons:not(.collapsed) .accordion-icon::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.tdfaq__accordion-items .accordion-item .accordion-header .accordion-buttons .accordion-icon {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  margin-right: 13px;
+  border-radius: 50px;
+  display: inline-block;
+  background-color: black;
+}
+.tdfaq__accordion-items .accordion-item .accordion-header .accordion-buttons .accordion-icon::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--td-white);
+  border-radius: 2px;
+  transition: 0.4s;
+}
+.tdfaq__accordion-items .accordion-item .accordion-header .accordion-buttons .accordion-icon::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--td-white);
+  border-radius: 2px;
+}
+.tdfaq__accordion-items .accordion-item .accordion-body {
+  border-top: 1px solid #ececed;
+  padding: 15px 0px 28px 0px;
+}
+.tdfaq__accordion-items .accordion-item .accordion-body p {
+  font-size: 16px;
+}
+
 .td-btn {
   color: #fff;
   font-size: 14px;
@@ -448,6 +520,10 @@ textarea {
 
 .pt-195 {
   padding-top: 195px;
+}
+
+.pb-190 {
+  padding-bottom: 190px;
 }
 
 /*--
