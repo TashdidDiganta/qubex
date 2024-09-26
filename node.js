@@ -39,18 +39,25 @@ const phonesArray = [
   ];
 
   
-
-function phonePrice(phones){
-    let totalPrice = 0;
-    for(const phone of phones){
-        const price = phone.price * phone.quantity;
-        totalPrice = totalPrice + price
-    }
-    return totalPrice
-
+function sum(num1,num2){
+  return num1 + num2;
 }
 
-const price = phonePrice(phonesArray)
+function subtract(num1,num2){
+  return num1 - num2;
+}
 
-console.log(price)
 
+function calculator(a,b,order){
+  if(order === 'sum'){
+    return sum(a,b);
+  }
+  if(order === 'subtract'){
+    return subtract(a,b);
+  }
+}
+
+const setPrice = calculator(5,2,'subtract')
+
+
+console.log(setPrice);
