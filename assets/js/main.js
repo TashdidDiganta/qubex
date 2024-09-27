@@ -32,7 +32,8 @@
         // other options
     });
 
-
+    // text circle
+    new CircleType(document.getElementById('demo3'));
 
    //Fact Counter + Text Count
    if ($(".count-box").length) {
@@ -65,9 +66,7 @@
     );
   }
 
-
-
-          //Progress Bar / Levels
+  //Progress Bar / Levels
   if ($(".progress-levels .progress-box .bar-fill").length) {
     $(".progress-box .bar-fill").each(
       function () {
@@ -80,5 +79,41 @@
       }
     );
   }
+
+
+  // Testimonal Slider
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    slidesPerView: 2,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+    // testimonial slider 
+    var swiper = new Swiper(".tp-testimonial-active", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      keyboard: {
+          enabled: true,
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: ".tp-swiper-test-button-next",
+          prevEl: ".tp-swiper-test-button-prev",
+      },
+  });
       
 })(jQuery);

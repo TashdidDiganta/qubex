@@ -1,0 +1,52 @@
+@use '../../utils' as *;
+
+.td-video{
+    &-area{
+        padding: 215px 0px;
+        &::before{
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            opacity: 0.702;
+            position: absolute;
+            background-color: rgb(4, 11, 30);
+        }
+    }
+    &__shape1{
+        left: 0;
+        bottom: 0;
+    }
+    &__shape2{
+        right: 0;
+        bottom: 0;
+    }
+    &-content{
+        height: 206px;
+        position: relative;
+        align-items: center;
+    }
+    &__icon-circle{
+        height: 141px;
+        width: 141px;
+        line-height: 156px;
+    }
+    &__circle-text{
+        position: absolute;
+        font-size: 20px;
+        color: var(--td-white);
+    }
+}
+
+.Rectangle_811 {
+    background-color: rgb(4, 11, 30);
+    opacity: 0.702;
+    position: absolute;
+    left: 0px;
+    top: 5790px;
+    width: 1920px;
+    height: 636px;
+    z-index: 316;
+  }
+  

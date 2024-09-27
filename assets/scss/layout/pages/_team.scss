@@ -1,1 +1,97 @@
 @use '../../utils' as *;
+
+.td-team{
+    overflow: hidden;
+    &__img{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        z-index: 1;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            opacity: 0.6;
+            background: linear-gradient(0deg, #212429 0%, rgba(33, 36, 41, 0.00) 36.36%);
+            width: 0%;
+            transform: translateY(100%);
+            transition: all 500ms ease;
+            z-index: 1;
+        }
+    }
+    &__content{
+        left: 40px;
+        bottom: 40px;
+        & h5, p{
+            opacity: 0;
+            visibility: hidden;
+            transition-delay: 0s;
+            color: var(--td-white);
+            transform: translateY(100%);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    &__socials{
+           & a{
+               border: 0;
+               margin-right: 15px;
+               color: var(--td-black);
+               background-color: var(--td-white);
+               transform: translateY(100%);
+               transition: all 0.5s ease-in-out;
+               transition-delay: 0s;
+               opacity: 0;
+               visibility: hidden;
+                &:hover{
+                    color: var(--td-white);
+                    background-color: var(--td-theme-color);
+                    border-color:var(--td-white);
+                }
+        }
+    }
+    &-item{
+        overflow: hidden;
+        &:hover{
+            & h5, p{
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+            }
+            .td-team__img{
+                &::before{
+                    width: 100%;
+                    transform: translateY(0);
+                }
+            }
+            .td-team__socials{
+                & a{
+                    transform: translateY(0);
+                    opacity: 1;
+                    visibility: visible;
+                    &:nth-child(4) {
+                        transition-delay: 0.1s;
+                    }
+                    &:nth-child(2) {
+                        opacity: 1;
+                        visibility: visible;
+                        transition-delay: 0.2s;
+                    }
+                    &:nth-child(3) {
+                        opacity: 1;
+                        visibility: visible;
+                        transition-delay: 0.3s;
+                    }
+                    &:nth-child(4) {
+                        opacity: 1;
+                        visibility: visible;
+                        transition-delay: 0.4s;
+                    }
+                }
+            }
+         }
+    }
+  
+}
