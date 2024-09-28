@@ -125,7 +125,7 @@
           enabled: true,
       },
       pagination: {
-          el: ".swiper-pagination",
+          // el: ".swiper-pagination",
           clickable: true,
       },
       navigation: {
