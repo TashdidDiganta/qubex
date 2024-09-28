@@ -1,1 +1,121 @@
 @use '../../utils' as *;
+
+.td-footer{
+    &-area{
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-color: rgb(4, 11, 30); 
+        & p{
+            font-size: 14px;
+            color: rgb(150, 153, 160);
+        }      
+        & h5{
+            padding-top: 10px;
+            color: var(--td-white);
+        }   
+    }
+    &__logo{
+        padding-bottom: 25px;
+    }
+    &__call{
+        font-size: 20px;
+        padding-top: 35px;
+        padding-top: 23px;
+        padding-bottom: 5px;
+        color: var(--td-white);
+    }
+    &__list{
+        padding-top: 20px;
+        & li{
+            padding-bottom: 10px;
+            & i{
+                line-height: 0;
+                padding-right: 10px;
+                color: rgb(150, 153, 160);
+            }
+            & a{
+                color: rgb(150, 153, 160);
+                &:hover{
+                    color: var(--td-theme-color-2);
+                }
+            }
+        }
+    }
+    &__post{
+        & p{
+            & i{
+                padding-right: 10px;
+                color: var(--td-theme-color-2);
+            }
+        }
+    }
+    &-widget__contact{
+        &-form{
+            margin-top: 25px;
+            &-input-box {
+                position: relative;
+                & input[type="email"] {
+                    height: 40px;
+                    width: 100%;
+                    background-color: rgb(14, 20, 37);
+                    outline: none;
+                    font-size: 14px;
+                    color: #fff;
+                    border: 0;
+                    padding-right: 60px;
+                    padding-left: 15px;
+                    border-radius: 0;
+                }
+            }
+        }
+        &-btn {
+            top: 50%;
+            right: 5px;
+            border: none;
+            width: 60px;
+            height: 38px;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            transition: all 500ms ease;
+            transform: translateY(-50%);
+            -webkit-transition: all 500ms ease;
+            background-color: var(--td-theme-color-2);
+            & i {
+                position: relative;
+                display: inline-block;
+                font-size: 20px;
+                line-height: 20px;
+                color: var(--td-white);
+                -webkit-transition: all 500ms ease;
+                transition: all 500ms ease;
+            }
+        }
+    }
+    &__social{
+        & a{
+            margin-right: 20px;
+            color: var(--td-white);
+            transition: .3s;
+            &:hover{
+                color: var(--td-theme-color-2);
+            }
+
+        }
+    }
+    &__end-credits{
+        display: flex;
+        justify-content: center;
+        padding: 35px 0px;
+        background-color: rgb(14, 20, 37);
+        & p{
+            color: rgb(150, 153, 160);
+        }
+    }
+    
+}
+
+
+
+  

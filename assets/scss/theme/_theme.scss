@@ -177,7 +177,7 @@ h6 {
 	margin-top: 0px;
 	font-weight: 700;
 	line-height: 1.2;
-	word-spacing: -5px;
+	// word-spacing: -5px;
 	// @include tp-transition(color);
 }
 
@@ -303,7 +303,8 @@ textarea{
 	&:focus{
 		border-color: var(--td-theme-color);
 		&::placeholder{
-			opacity: 0;
+			// opacity: 0;
+			color: #fff;
 		}
 	}
 
@@ -327,12 +328,12 @@ textarea{
 }
 
 *::-moz-placeholder {
-	color: var(--td-black);
+	color: var(--td-white);
 	font-size: 14px;
 	opacity: 1;
 }
 *::placeholder {
-	color: var(--td-black);
+	color: var(--td-white);
 	font-size: 14px;
 	opacity: 1;
 }
