@@ -4493,6 +4493,113 @@ textarea {
   color: var(--td-white);
 }
 
+.td-project__item:hover .td-project__img::before {
+  height: 100%;
+  transform: translateY(0%);
+}
+.td-project__item:hover .td-project__info a {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+.td-project__item:hover .td-project__title {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition-delay: 0.1s;
+}
+.td-project__img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+}
+.td-project__img::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.6;
+  background: linear-gradient(0deg, rgb(83, 64, 255) 0%, rgba(83, 64, 255, 0) 100%);
+  width: 100%;
+  height: 0%;
+  transform: translateY(100%);
+  transition: all 500ms ease;
+  z-index: 1;
+}
+.td-project__info {
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.td-project__info .project-icon {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0s;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50px;
+  padding: 17px 14px 10px 14px;
+  background-color: var(--td-theme-color-2);
+}
+.td-project__info .project-icon i {
+  font-size: 20px;
+  color: var(--td-white);
+}
+.td-project__title {
+  margin-top: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(60%);
+  transition-delay: 0s;
+  transition: all 0.5s ease-in-out;
+}
+.td-project__title p {
+  color: var(--td-white);
+}
+.td-project__title h5 a {
+  background-color: transparent;
+  font-size: 22px;
+  color: var(--td-white);
+}
+.td-project__border {
+  position: relative;
+}
+.td-project__border::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 720px;
+  height: 1.3px;
+  background-color: rgb(212, 212, 212);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+.td-project__border::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 230px;
+  height: 3px;
+  background-color: var(--td-theme-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.Rectangle_803 {
+  background-color: rgb(212, 212, 212);
+  position: absolute;
+  left: 600px;
+  top: 3926px;
+  width: 720px;
+  height: 2px;
+  z-index: 462;
+}
+
 .td-swiper-button-prev, .td-swiper-button-next {
   width: 60px;
   height: 60px;
