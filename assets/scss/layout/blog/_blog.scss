@@ -1,3 +1,21 @@
 @use '../../utils' as *;
 
 
+.td-blog{
+    &__body{
+        padding: 30px 60px 30px 30px;
+        & p{
+            margin-bottom: 15px;
+        }
+    }
+    &__btn{
+        margin-top: 14px;
+        font-weight: 600;
+        display: inline-block;
+        transition: .3s;
+        &:hover{
+            color: var(--td-theme-color);
+        }
+    }
+}
+
