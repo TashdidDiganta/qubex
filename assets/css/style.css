@@ -141,6 +141,23 @@
   --td-grey-color-4: #f6f6f6;
 }
 
+.slick-center {
+  width: 547px;
+  transition: 1s;
+  transform: scaleX(1.4); /* Scale up the center slide */
+}
+
+.slider {
+  max-width: 800px;
+  height: 100px;
+  padding: 50px;
+}
+
+.slider-item {
+  padding: 50;
+  background-color: #35c57d;
+}
+
 :root {
   --td-heading-font: "Arimo", sans-serif;
   --td-body-font: "DM Sans", sans-serif;
@@ -409,7 +426,7 @@ input[type=number]:focus::placeholder,
 input[type=password]:focus::placeholder,
 input[type=url]:focus::placeholder,
 textarea:focus::placeholder {
-  color: #fff;
+  opacity: 0;
 }
 
 textarea {

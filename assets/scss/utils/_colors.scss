@@ -16,3 +16,23 @@
 
 }
 
+
+.slick-center {
+    width: 547px;
+    transition: 1s;
+    transform: scaleX(1.4); /* Scale up the center slide */
+  }
+
+
+  .slider {
+    // background-color: #35c57d;
+    max-width: 800px;
+    height: 100px;
+    padding: 50px;
+    // margin: 50px auto;
+  }
+
+  .slider-item{
+    padding: 50;
+    background-color: #35c57d;
+  }

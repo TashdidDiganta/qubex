@@ -115,5 +115,52 @@
           prevEl: ".tp-swiper-test-button-prev",
       },
   });
+
+
+    // testimonial slider 
+    var swiper = new Swiper(".td-product-active", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      keyboard: {
+          enabled: true,
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: ".td-swiper-product-button-next",
+          prevEl: ".td-swiper-product-button-prev",
+      },
+  });
+
+
+  // $('.center').slick({
+  //   centerMode: true,
+  //   centerPadding: '0px',
+  //   slidesToShow: 3,
+  //   // autoplay: true,
+  //   // autoplaySpeed: 3000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // });
       
 })(jQuery);
